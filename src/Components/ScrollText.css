@@ -1,0 +1,18 @@
+@keyframes scrollText {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scroll-text {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    right: 0;
+    margin-bottom: 14px;
+    animation: scrollText 10s linear infinite;
+  }
+  
