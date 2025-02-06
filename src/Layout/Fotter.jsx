@@ -8,6 +8,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
+    
     <footer className="bg-dark text-white text-center p-4">
       <div className="container">
         <div className="row justify-content-center">
