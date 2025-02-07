@@ -45,13 +45,12 @@ const ProductGrid = () => {
           <p style={descStyle}>Feature-packed smartwatch with health tracking.</p>
           <p><strong>Rating:</strong> 4.3 ⭐</p>
           <p><strong>Price:</strong> $200</p>
-          <button style={buttonStyle}>Buy Now</button>
+          <button  style={buttonStyle}>Buy Now</button>
         </div>
       </div>
     </div>
   );
 };
-
 // স্টাইল অবজেক্ট
 const cardStyle = {
   border: "1px solid #ddd",
@@ -74,7 +73,7 @@ const descStyle = {
 };
 
 const buttonStyle = {
-  backgroundColor: "#007bff",
+  backgroundColor: "#3F9E53",
   color: "white",
   padding: "10px",
   border: "none",

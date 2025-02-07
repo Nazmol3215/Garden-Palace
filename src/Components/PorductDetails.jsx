@@ -11,34 +11,34 @@ const products = [
   {
     id: 1,
     image:picture,
-    title: "EXECUTIVE CHAIR",
-    description: "চেয়ার আমাদের দৈনন্দিন জীবনে অপরিহার্য আসবাবপত্র। এটি বসার জন্য বিশেষভাবে তৈরি করা হয়।",
+    title: "প্রয়োজনীয় মেটাল রেক, বীজ, সার, ",
+    description: "মাদের স্টকে চলে এসেছে জৈব ও ভার্মি মিক্সড পায়েল সার খুচরা প্রতি কেজি ৪০৳ | আপনার বারান্দা কিংবা ছাদে যে কোন ধরনের মেটাল রেক কাস্টমাইজড করে নিতে যোগাযোগ করুন ইনবক্সে অ",
     rating: "★★★★☆",
     sold: "2.1K+ bought in past month",
-    price: "$499.99",
-    oldPrice: "$699.99",
+    price: "499.99 ৳",
+    oldPrice: "699.99 ৳",
     deliveryDate: "Tue, Nov 15",
   },
   {
     id: 2,
     image: picture1,
-    title: "OFFICE CHAIR",
-    description: "অফিস চেয়ার আরামদায়ক এবং দীর্ঘ সময় বসে কাজ করার জন্য উপযোগী।",
+    title: "প্রয়োজনীয় মেটাল রেক, বীজ, সার, ",
+    description: "মাদের স্টকে চলে এসেছে জৈব ও ভার্মি মিক্সড পায়েল সার খুচরা প্রতি কেজি ৪০৳ | আপনার বারান্দা কিংবা ছাদে যে কোন ধরনের মেটাল রেক কাস্টমাইজড করে নিতে যোগাযোগ করুন ইনবক্সে অ।",
     rating: "★★★★★",
     sold: "3K+ bought in past month",
-    price: "$299.99",
-    oldPrice: "$399.99",
+    price: "299.99 ৳",
+    oldPrice: "399.99 ৳",
     deliveryDate: "Wed, Nov 16",
   },
   {
     id: 3,
     image: picture2,
-    title: "VISITOR MESH CHAIR",
-    description: "আরামদায়ক মেশ চেয়ার যা বসার জন্য উপযুক্ত এবং স্টাইলিশ।",
+    title: "প্রয়োজনীয় মেটাল রেক, বীজ, সার, ",
+    description: "মাদের স্টকে চলে এসেছে জৈব ও ভার্মি মিক্সড পায়েল সার খুচরা প্রতি কেজি ৪০৳ | আপনার বারান্দা কিংবা ছাদে যে কোন ধরনের মেটাল রেক কাস্টমাইজড করে নিতে যোগাযোগ করুন ইনবক্সে অ",
     rating: "★★★★☆",
     sold: "1.9K+ bought in past month",
-    price: "$626.84",
-    oldPrice: "$799.99",
+    price: "626.84 ৳",
+    oldPrice: "799.99 ৳",
     deliveryDate: "Thu, Nov 17",
   },
 ];
@@ -58,13 +58,13 @@ const ProductCard = () => {
                   <span className="text-warning me-2">{product.rating}</span>
                   <small className="text-muted">{product.sold}</small>
                 </div>
-                <h4 className="text-danger fw-bold">{product.price}</h4>
+                <h4 className="text-danger fw-bold" style={{ color: 'red', fontSize: '29px', marginRight: '5px' }}>{product.price}</h4>
                 <p className="text-muted">
-                  <del>List: {product.oldPrice}</del>
+                  <del style={{ color: 'back', fontSize: '24px', marginRight: '5px' }}>List: {product.oldPrice}</del>
                 </p>
                 <p className="text-success">Delivery {product.deliveryDate}</p>
-                <p className="text-muted">Ships to Bangladesh</p>
-                <button className="btn btn-primary w-100 mt-auto">Order Now</button>
+                <p className="text-muted">Ships to Addass</p>
+                <button className="btn btn-primary w-100 mt-auto" style={{ backgroundColor: '#3F9E53' }}>Order Now</button>
               </div>
             </div>
           </div>
