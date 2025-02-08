@@ -4,7 +4,11 @@ import picture1 from "../Images/i10.png";
 import picture2 from "../Images/i12.png";
 import picture3 from "../Images/i16.png";
 
-const ProductGrid = () => {
+const ProductGrid = ({scrollToOrder}) => {
+  const handleClick = () => {
+    scrollToOrder(); // এটা স্ক্রোল করবে OrderSubmit কম্পোনেন্টে
+  };
+
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
@@ -15,7 +19,7 @@ const ProductGrid = () => {
           <p style={descStyle}>High-quality wireless headphones with noise cancellation.</p>
           <p><strong>Rating:</strong> 4.5 ⭐</p>
           <p><strong>Price:</strong> $120</p>
-          <button style={buttonStyle}>Buy Now</button>
+          <button onClick={handleClick} style={buttonStyle}>Buy Now</button>
         </div>
 
         {/* প্রোডাক্ট ২ */}
@@ -25,7 +29,7 @@ const ProductGrid = () => {
           <p style={descStyle}>Latest smartphone with advanced features.</p>
           <p><strong>Rating:</strong> 4.8 ⭐</p>
           <p><strong>Price:</strong> $899</p>
-          <button style={buttonStyle}>Buy Now</button>
+          <button onClick={handleClick} style={buttonStyle}>Buy Now</button>
         </div>
 
         {/* প্রোডাক্ট ৩ */}
@@ -35,7 +39,7 @@ const ProductGrid = () => {
           <p style={descStyle}>Lightweight laptop with powerful performance.</p>
           <p><strong>Rating:</strong> 4.7 ⭐</p>
           <p><strong>Price:</strong> $1500</p>
-          <button style={buttonStyle}>Buy Now</button>
+          <button onClick={handleClick} style={buttonStyle}>Buy Now</button>
         </div>
 
         {/* প্রোডাক্ট ৪ */}
@@ -45,7 +49,7 @@ const ProductGrid = () => {
           <p style={descStyle}>Feature-packed smartwatch with health tracking.</p>
           <p><strong>Rating:</strong> 4.3 ⭐</p>
           <p><strong>Price:</strong> $200</p>
-          <button  style={buttonStyle}>Buy Now</button>
+          <button onClick={handleClick} style={buttonStyle}>Buy Now</button>
         </div>
       </div>
     </div>

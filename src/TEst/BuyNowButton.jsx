@@ -1,4 +1,3 @@
-// BuyNowButton.js
 import React from 'react';
 
 const BuyNowButton = ({ scrollToOrder }) => {
@@ -22,9 +21,9 @@ const BuyNowButton = ({ scrollToOrder }) => {
     cursor: 'pointer',
     transition: 'all 0.3s ease-in-out',
     textTransform: 'uppercase',
-    marginLeft: '26px',
+    marginLeft: '36px',
     marginTop: '10px',
-    width: '430px',
+    width: '340px',
   }}
 >
   Buy Now
