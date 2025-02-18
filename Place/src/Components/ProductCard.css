@@ -1,0 +1,62 @@
+/* Product Card CSS */
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styling */
+  .card img {
+    width: 100%;
+    height: 250px; /* ইমেজের উচ্চতা সেট করুন */
+    object-fit: cover; /* ইমেজকে কার্ডের মধ্যে ভালোভাবে ফিট করাবে */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  /* Card Body Styling */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Product Title */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Product Description */
+  .card-text {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Price Styling */
+  .text-danger {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Old Price Styling */
+  .text-muted del {
+    font-size: 14px;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
